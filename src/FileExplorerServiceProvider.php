@@ -42,6 +42,8 @@ class FileExplorerServiceProvider extends ServiceProvider
             // Registering package commands.
             // $this->commands([]);
         }
+        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+        $this->loadViewsFrom(__DIR__.'/views', 'fileexplorer');
     }
 
     /**
